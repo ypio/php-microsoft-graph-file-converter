@@ -1,6 +1,6 @@
 {
     "name": "ypio/php-microsoft-graph-file-converter",
-    "description": "A PHP library that allow you to easly use the Microsft Graph API to convert some file formats in some others file format",
+    "description": "A PHP library that allow you to easly use the Microsft Graph API to convert some file formats in some others file format like docx to pdf.",
     "keywords": [
         "conversion pdf",
         "microsoft graph",
