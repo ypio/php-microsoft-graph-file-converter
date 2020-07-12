@@ -1,6 +1,12 @@
 {
     "name": "ypio/php-microsoft-graph-file-converter",
     "description": "A PHP library that allow you to easly use the Microsft Graph API to convert some file formats in some others file format",
+    "keywords": [
+        "conversion pdf",
+        "microsoft graph",
+        "conversion",
+        "pdf conversion"
+    ],
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
@@ -13,10 +19,13 @@
     "require": {
         "psr/http-client": "^1.0",
         "guzzlehttp/psr7": "^1.6",
-        "php": "^7.2",
+        "php": "^7.2.0",
         "ext-json": "*"
     },
     "require-dev": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "suggest": {
         "guzzlehttp/guzzle": "^7.0"
     },
     "autoload": {
