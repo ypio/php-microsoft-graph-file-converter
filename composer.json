@@ -2,7 +2,7 @@
     "name": "ypio/php-microsoft-graph-file-converter",
     "description": "A PHP library that allow you to easly use the Microsft Graph API to convert some file formats in some others file format",
     "type": "library",
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "YPIO",
