@@ -24,7 +24,7 @@ Particularly usefull to convert Office files (xlsx, docx...) to PDF.
 
 You first need to register an application with the Microsoft identity platform [https://docs.microsoft.com/en-us/graph/auth-register-app-v2](https://docs.microsoft.com/en-us/graph/auth-register-app-v2)  
   
-Then there is different way to get a token depending on your need [https://docs.microsoft.com/en-us/graph/auth-v2-user](https://docs.microsoft.com/en-us/graph/auth-v2-user) or [https://docs.microsoft.com/en-us/graph/auth-v2-service](https://docs.microsoft.com/en-us/graph/auth-v2-service)  
+Then there is two different way to get a token depending on your need [https://docs.microsoft.com/en-us/graph/auth-v2-user](https://docs.microsoft.com/en-us/graph/auth-v2-user) or [https://docs.microsoft.com/en-us/graph/auth-v2-service](https://docs.microsoft.com/en-us/graph/auth-v2-service)  
   
 Here is an example about how to get a token without a 
 
