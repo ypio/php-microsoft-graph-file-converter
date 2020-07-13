@@ -10,6 +10,12 @@ use Ypio\MSGraphFileConverter\Configuration;
 use Ypio\MSGraphFileConverter\Exceptions\ExceptionGenerator;
 use Ypio\MSGraphFileConverter\Exceptions\MSGraphException;
 
+/**
+ * Add an abstraction layers for request sent to MSGraph
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ */
 class BaseRequest {
 
     /**
@@ -63,6 +69,9 @@ class BaseRequest {
     }
 
     /**
+     *
+     * Follow redirection return by response with a 'location' header
+     *
      * @param ResponseInterface $response
      * @return ResponseInterface
      * @throws ClientExceptionInterface

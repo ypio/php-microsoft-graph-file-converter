@@ -4,6 +4,12 @@ namespace Ypio\MSGraphFileConverter;
 
 use Psr\Http\Client\ClientInterface;
 
+/**
+ * Configuration elements used for conversion
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ */
 class Configuration {
 
     /**

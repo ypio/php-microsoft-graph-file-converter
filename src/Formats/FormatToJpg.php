@@ -5,7 +5,8 @@ namespace Ypio\MSGraphFileConverter\Formats;
 /**
  * Input format supported for JPG output format
  *
- * @package Ypio\MSGraphFileConverter\Types
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
  */
 class FormatToJpg extends FormatTo {
 

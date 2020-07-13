@@ -3,6 +3,14 @@
 namespace Ypio\MSGraphFileConverter\Models;
 
 
+/**
+ * Interface OneDriveItem
+ *
+ * This interface represent a OneDrive (an element that will be stored, was stored, or is stored one OneDrive)
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ */
 interface OneDriveItem {
 
     /**

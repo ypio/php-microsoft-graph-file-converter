@@ -10,7 +10,8 @@ use Ypio\MSGraphFileConverter\Repositories\FileRepository;
  * Use {@see FileRepository} to perform operation on OneDrive
  * about the file represented by this class (like uploading, deleting)
  *
- * @package Ypio\MSGraphFileConverter\Models
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
  *
  */
 class FileModel implements OneDriveItem {

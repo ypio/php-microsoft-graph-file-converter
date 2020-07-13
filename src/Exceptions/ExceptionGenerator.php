@@ -5,8 +5,10 @@ namespace Ypio\MSGraphFileConverter\Exceptions;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * Class MSGraphError
  * Generate a {@see MSGraphException} exception when MSGraph return a 4XX or 5XX status code
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
  */
 class ExceptionGenerator {
 

@@ -12,6 +12,34 @@ use Ypio\MSGraphFileConverter\Repositories\FileRepository;
 use Ypio\MSGraphFileConverter\Formats\FormatTo;
 use Ypio\MSGraphFileConverter\Formats\FormatToPdfFrom;
 
+/**
+ *
+ * This class allow you to convert files by using the Microsoft Graph API and OneDrive convertion feature
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ *
+ * @uses \Ypio\MSGraphFileConverter\Configuration
+ *
+ * @example ```php
+ * $configuration = new Configuration(
+ *   $accessToken,
+ *   $user_id,
+ *   new Client()
+ * );
+ *
+ * $converter = new FileConverter();
+ * $converter->setConfiguration($configuration);
+ * $converter>setFile(file_get_contents('file-sample_100kB.docx'));
+ *
+ * try {
+ *   echo $converter->convert(new FormatToPdfFrom(FormatToPdfFrom::DOCX)); } catch (MSGraphException $exception) {
+ *   var_dump($exception->getResponse()->getBody()->getContents());
+ * }
+ * ```
+ *
+ * @package Ypio\MSGraphFileConverter
+ */
 class FileConverter implements FileConverterInterface
 {
 
@@ -52,7 +80,7 @@ class FileConverter implements FileConverterInterface
     /**
      * Set the file that should be convert.
      *
-     * This method do not perform any request and only store the file content inside the object attribute.
+     * @note This method do not perform any request and only store the file content inside the object attribute.
      *
      * @param string $content Content of the file that you want to convert.
      * @param string $filename Name that will be shown on OneDrive. You don't need to specify the extension.
@@ -78,7 +106,6 @@ class FileConverter implements FileConverterInterface
      *
      * @param \Ypio\MSGraphFileConverter\Formats\FormatTo $availableTypes Input format and out put format
      * See {@see FormatToPdfFrom}
-     *
      * @param bool $avoidPhantomFile If an exception exception is thrown during the conversion process after the file uploaded
      * the method will try to call the {@see FileRepository::delete()} method to avoid phantom files.
      *

@@ -7,6 +7,30 @@ use ReflectionClass;
 use ReflectionException;
 use Ypio\MSGraphFileConverter\Exceptions\InvalidOutPutTypeException;
 
+/**
+ *
+ * Class that extends this one can represent an input format and an output format
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ *
+ * @example ```php
+ *
+ * class FormatToPdfFrom extends {@see FormatTo} {
+ *
+ *   public const DOCX = 'docx';
+ *
+ *   public function input() {
+ *      return 'pdf'
+ *   }
+ *
+ * }
+ *
+ * $format = new FormatToPdfFrom(FormatToPdfFrom::DOCX);
+ *
+ * ```
+ *
+ */
 abstract class FormatTo {
 
     private $type;

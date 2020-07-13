@@ -8,6 +8,17 @@ use Ypio\MSGraphFileConverter\Exceptions\MSGraphException;
 use Ypio\MSGraphFileConverter\Http\BaseRequest;
 use Ypio\MSGraphFileConverter\Models\FileModel;
 
+/**
+ *
+ * Craft request that will be send to MSGraph
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ *
+ * @uses \Ypio\MSGraphFileConverter\Models\FileModel
+ * @uses \Ypio\MSGraphFileConverter\Configuration
+ * @uses \Ypio\MSGraphFileConverter\Http\BaseRequest
+ */
 class FileRepository {
 
     /**
