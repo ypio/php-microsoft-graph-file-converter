@@ -20,6 +20,12 @@ Particularly usefull to convert Office files (xlsx, docx...) to PDF.
   
 ## Usage   
 
+### Installation 
+
+`composer require ypio/php-microsoft-graph-file-converter`
+
+`require 'vendor/autoload.php';`
+
 ### Require a token 
 
 You first need to register an application with the Microsoft identity platform [https://docs.microsoft.com/en-us/graph/auth-register-app-v2](https://docs.microsoft.com/en-us/graph/auth-register-app-v2)  
