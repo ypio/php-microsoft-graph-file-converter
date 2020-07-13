@@ -13,8 +13,4 @@ use LogicException;
  * @author ypio <ypio.fr@gmail.com>
  * @since 1.0.0
  */
-class InvalidOutPutTypeException extends LogicException {
-
-
-
-}
+class InvalidOutPutTypeException extends LogicException {}

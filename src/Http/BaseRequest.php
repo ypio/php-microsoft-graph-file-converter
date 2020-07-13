@@ -28,6 +28,11 @@ class BaseRequest {
      */
     private $configuration;
 
+    /**
+     * BaseRequest constructor.
+     *
+     * @param Configuration $configuration
+     */
     public function __construct(Configuration $configuration)
     {
         $this->client = $configuration->getHttpClient();
@@ -35,6 +40,8 @@ class BaseRequest {
     }
 
     /**
+     * Send request with some preset
+     *
      * @param $method
      * @param $uri
      * @param $body

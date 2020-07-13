@@ -11,10 +11,9 @@ use Ypio\MSGraphFileConverter\Exceptions\InvalidOutPutTypeException;
  *
  * Class that extends this one can represent an input format and an output format
  *
- * @author ypio <ypio.fr@gmail.com>
- * @since 1.0.0
  *
- * @example ```php
+ * Example :
+ * ```php
  *
  * class FormatToPdfFrom extends {@see FormatTo} {
  *
@@ -30,6 +29,10 @@ use Ypio\MSGraphFileConverter\Exceptions\InvalidOutPutTypeException;
  *
  * ```
  *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ *
+ *
  */
 abstract class FormatTo {
 
@@ -37,6 +40,7 @@ abstract class FormatTo {
 
     /**
      * FormatTo constructor.
+     *
      * @param string $type
      * @throws ReflectionException
      */
@@ -52,16 +56,20 @@ abstract class FormatTo {
         $this->type = $type;
     }
 
+    /**
+     * Get the input format
+     * @return string
+     */
     public function input(): string
     {
         return $this->type;
     }
 
-    public function compare(string $type): bool
-    {
-        return $this->type === $type;
-    }
-
+    /**
+     * Get the output format
+     *
+     * @return string
+     */
     abstract public function output(): string;
 
 }

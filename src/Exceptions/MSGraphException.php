@@ -11,7 +11,7 @@ use Ypio\MSGraphFileConverter\Models\OneDriveItem;
  * Exception throw when MSGraph return a 4XX or 5XX status code
  *
  * Notes :
- * * You can you {@see MSGraphException::getResponse()} to get more information about the error that occured.
+ * * You can you {@see MSGraphException::getResponse()} to get more information about the error that occurred.
  * * You can use {@see MSGraphException::getConcernedItem()} to get information about the OneDrive item that was in use when the exception was thrown
  *
  * @author ypio <ypio.fr@gmail.com>

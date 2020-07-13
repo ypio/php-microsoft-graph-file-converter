@@ -14,6 +14,9 @@ class FormatToHtmlFrom extends FormatTo {
     public const _md = 'md';
     public const _msg = 'msg';
 
+    /**
+     * @inheritDoc
+     */
     public function output(): string
     {
         return 'html';

@@ -17,6 +17,9 @@ class FormatToGlb extends FormatTo {
     public const _stl = 'stl';
     public const _3mf = '3mf';
 
+    /**
+     * @inheritDoc
+     */
     public function output(): string
     {
         return 'glb';

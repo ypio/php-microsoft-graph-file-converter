@@ -29,6 +29,9 @@ class FormatToPdfFrom extends FormatTo {
     public const XLS = 'xls';
     public const XLSX = 'xlsx';
 
+    /**
+     * @inheritDoc
+     */
     public function output(): string
     {
         return 'pdf';

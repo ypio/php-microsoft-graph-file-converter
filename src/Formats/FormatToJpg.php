@@ -142,6 +142,9 @@ class FormatToJpg extends FormatTo {
     public const _yaml = 'yaml';
     public const _yml = 'yml';
 
+    /**
+     * @inheritDoc
+     */
     public function output(): string
     {
         return 'jpg';

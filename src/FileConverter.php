@@ -14,14 +14,10 @@ use Ypio\MSGraphFileConverter\Formats\FormatToPdfFrom;
 
 /**
  *
- * This class allow you to convert files by using the Microsoft Graph API and OneDrive convertion feature
+ * This class allow you to convert files by using the Microsoft Graph API and OneDrive conversion feature
  *
- * @author ypio <ypio.fr@gmail.com>
- * @since 1.0.0
- *
- * @uses \Ypio\MSGraphFileConverter\Configuration
- *
- * @example ```php
+ * Example :
+ * ```php
  * $configuration = new Configuration(
  *   $accessToken,
  *   $user_id,
@@ -37,6 +33,10 @@ use Ypio\MSGraphFileConverter\Formats\FormatToPdfFrom;
  *   var_dump($exception->getResponse()->getBody()->getContents());
  * }
  * ```
+ *
+ * @author ypio <ypio.fr@gmail.com>
+ * @since 1.0.0
+ * @uses \Ypio\MSGraphFileConverter\Configuration
  *
  * @package Ypio\MSGraphFileConverter
  */
@@ -54,7 +54,7 @@ class FileConverter implements FileConverterInterface
     private $file;
 
     /**
-     * @return Configuration
+     * @inheritDoc
      */
     public function getConfiguration(): Configuration
     {
@@ -62,7 +62,7 @@ class FileConverter implements FileConverterInterface
     }
 
     /**
-     * @param Configuration $configuration
+     * @inheritDoc
      */
     public function setConfiguration(Configuration $configuration): void
     {
@@ -70,7 +70,7 @@ class FileConverter implements FileConverterInterface
     }
 
     /**
-     * @return bool
+     * @inheritDoc
      */
     public function hasRequirements(): bool
     {
@@ -80,14 +80,15 @@ class FileConverter implements FileConverterInterface
     /**
      * Set the file that should be convert.
      *
-     * @note This method do not perform any request and only store the file content inside the object attribute.
+     * Note
+     * * This method do not perform any request and only store the file content inside the object attribute.
      *
      * @param string $content Content of the file that you want to convert.
      * @param string $filename Name that will be shown on OneDrive. You don't need to specify the extension.
      * File extension is automatically defined from the {@see FileConverter::convert()} arguments
      * @param bool $suffixWithRandomString does the filename should be prefixed with a random string
      *
-     * @return $this|FileConverterInterface
+     * @return FileConverterInterface
      * @throws Exception
      */
     public function setFile(string $content, $filename = '', $suffixWithRandomString = true): FileConverterInterface
@@ -104,7 +105,7 @@ class FileConverter implements FileConverterInterface
      *
      * Upload a file, convert it, delete the uploaded file, and return the converted content
      *
-     * @param \Ypio\MSGraphFileConverter\Formats\FormatTo $availableTypes Input format and out put format
+     * @param FormatTo $availableTypes Input format and out put format
      * See {@see FormatToPdfFrom}
      * @param bool $avoidPhantomFile If an exception exception is thrown during the conversion process after the file uploaded
      * the method will try to call the {@see FileRepository::delete()} method to avoid phantom files.

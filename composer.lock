@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9795fc889d2aedeb95ab2023f61698e6",
+    "content-hash": "82f36f836b6bab3fcfcc52fdc7192a69",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -356,7 +356,10 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.2.0",
+        "ext-json": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
 }

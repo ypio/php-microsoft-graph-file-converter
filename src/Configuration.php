@@ -29,6 +29,7 @@ class Configuration {
 
     /**
      * Configuration constructor.
+     *
      * @param string $token
      * @param string $user
      * @param ClientInterface $httpClient Http client psr 7 compliant
@@ -41,6 +42,8 @@ class Configuration {
     }
 
     /**
+     * Get the user that will be used for interaction his with OneDrive drive
+     *
      * @return string
      */
     public function getUser(): string
@@ -49,6 +52,8 @@ class Configuration {
     }
 
     /**
+     * Set the user that will be used for interaction his with OneDrive drive
+     *
      * @param string $user
      */
     public function setUser(string $user): void
@@ -57,6 +62,9 @@ class Configuration {
     }
 
     /**
+     *
+     * Get the token that will be used for MSGraph authentication
+     *
      * @return string
      */
     public function getToken(): string
@@ -65,6 +73,8 @@ class Configuration {
     }
 
     /**
+     * Set the token that will be used for MSGraph authentication
+     *
      * @param string $token
      */
     public function setToken(string $token): void
@@ -73,6 +83,9 @@ class Configuration {
     }
 
     /**
+     *
+     * Get Http client psr-7 compliant that will be used for sending request to MSGraph
+     *
      * @return ClientInterface
      */
     public function getHttpClient(): ClientInterface
@@ -81,6 +94,8 @@ class Configuration {
     }
 
     /**
+     * Set Http client psr-7 compliant that will be used for sending request to MSGraph
+     *
      * @param ClientInterface $httpClient
      */
     public function setHttpClient(ClientInterface $httpClient): void

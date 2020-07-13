@@ -33,7 +33,7 @@ class FileModel implements OneDriveItem {
 
     /**
      * @var string Id of the parent (directory where the file will be uploaded).
-     * Set 'root' to upload in the onedrive root directory.
+     * Set 'root' to upload in the OneDrive root directory.
      */
     public $parentId = 'root';
 
